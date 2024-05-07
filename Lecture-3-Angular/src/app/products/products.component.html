@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-12">
+    <label for="nem" class="form-label">Nem Prodact</label>
+    <input type="text" id="nem" class="form-control"   [(ngModel)]="namProdact" />
+
+    <label for="img" class="form-label"> Img prodact</label>
+    <input id="img" type="file" class="form-control" (change)="onFileSelected($event)" />
+
+    <label for="pris" class="form-label">pris Prodact</label>
+    <input id="pris" type="number" class="form-control" [(ngModel)]="priceProdact"/>
+
+    <label for="de" class="form-label">Decrbing Prodact</label>
+    <input id="de" type="text" class="form-control" [(ngModel)]="descrbnigProdact"/>
+  </div>
+  <div class="col-md-12">
+   <a
+    name=""
+    id=""
+    class="btn btn-primary"
+    href="#"
+    role="button"
+    (click)="onaddprodact()"
+    >save and vew</a
+   >
+
+</div>

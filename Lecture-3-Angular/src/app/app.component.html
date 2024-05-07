@@ -1,0 +1,19 @@
+
+<div class="container">
+  <app-products
+      (creatProdact)="onaddpro($event)"
+  ></app-products>
+</div>
+<!-- <div class="container">
+<div class="row"> <app-vew-prodact
+   *ngFor="let pro of prodactdetals"
+   [vewPro]="pro"></app-vew-prodact></div>
+
+</div> -->
+ <section style="background-color: #eee;">
+   <app-vew-prodact
+   *ngFor="let pro of prodactdetals"
+   [vewPro]="pro"></app-vew-prodact>
+
+</section>
+
