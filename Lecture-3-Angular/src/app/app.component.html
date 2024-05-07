@@ -1,8 +1,5 @@
-
 <div class="container">
-  <app-products
-      (creatProdact)="onaddpro($event)"
-  ></app-products>
+  <app-products (creatProdact)="onaddpro($event)"></app-products>
 </div>
 <!-- <div class="container">
 <div class="row"> <app-vew-prodact
@@ -10,10 +7,15 @@
    [vewPro]="pro"></app-vew-prodact></div>
 
 </div> -->
- <section style="background-color: #eee;">
-   <app-vew-prodact
-   *ngFor="let pro of prodactdetals"
-   [vewPro]="pro"></app-vew-prodact>
+<section style="background-color: #eee">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-4 mb-4 mb-lg-0" *ngFor="let pro of prodactdetals">
+        <app-vew-prodact
 
+          [vewPro]="pro"
+        ></app-vew-prodact>
+      </div>
+    </div>
+  </div>
 </section>
-
