@@ -8,16 +8,14 @@ import { Prodact } from './prodact';
 })
 export class AppComponent {
   title = 'Lecture-3-Angular';
- prodactdetals: any = [];
- onaddpro(supmt:Prodact)
-{
-  this.prodactdetals.push({
-    nam:supmt.nam,
-    img:supmt.img,
-    pris:supmt.pris,
-    des:supmt.des
-  })
-  console.log(this.prodactdetals)
-}
-
+  prodactdetals: any = [];
+  onaddpro(supmt: Prodact) {
+    this.prodactdetals.push({
+      nam: supmt.nam,
+      img: supmt.img,
+      pris: supmt.pris,
+      des: supmt.des,
+    });
+    console.log(this.prodactdetals);
+  }
 }

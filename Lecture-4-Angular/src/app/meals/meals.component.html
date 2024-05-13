@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <div class="row">
+    <div *ngFor="let meal of meals" class="col-md-4">
+      <div class="card">
+        <img [src]="meal.imageUrl" class="card-img-top" alt="Meal Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ meal.name }}</h5>
+          <p class="card-text">{{ meal.description }}</p>
+          <button (click)="displayMealDescription(meal.description)" class="btn btn-primary">View Description</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
